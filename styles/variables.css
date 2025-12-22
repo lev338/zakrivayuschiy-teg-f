@@ -1,1 +1,48 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-family-base: 'Inter-Variable', sans-serif;
+  --font-family-secondary: 'PressStart2P-Regular', monospace;
+  --Inter-wght: 400;
+  --page-bg-image:
+    repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(to top, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --block-inline-size: clamp(375px, 260.56px + 30.52vw, 700px);
+  --block-border-color: #000;
+  --block-bg-color: #fff;
+  --contour-color: #000;
+  --animation-fill-color: red;
+  --label-stroke-color: #fff;
+  --header-brand-padding: clamp(122px, 112.77px + 2.46cqi, 130px) clamp(16px, -114.77px + 37.07cqi, 122.5px);
+  --logotype-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --button-bg-color: #fff;
+  --button-color: #fff;
+  --button-borer-color: #000;
+  --menu-dialog-open-bg-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.card-title {
+  --Inter-wght: 715;
+}
+
+.card-text {
+  --Inter-wght: 410;
+}
+
+.like-icon:hover .core,
+.like-icon:hover .main-body {
+  --animation-fill-color: #000;
+}
+
+.like-icon:active .core,
+.like-icon:active .main-body {
+  --animation-fill-color: red;
+}
+
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body,
+.like-icon.is-liked .contour {
+  --animation-fill-color: red;
+}
