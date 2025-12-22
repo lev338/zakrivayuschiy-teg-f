@@ -1,1 +1,1 @@
-https://lev338.github.io/zakrivayuschiy-teg-f/
+https://lev338.github.io/zakrivayuschiy-teg-f
