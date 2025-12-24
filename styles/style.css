@@ -11,14 +11,17 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-block: 100px;
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-base), sans-serif;
   background-image: var(--page-bg-image);
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--Inter-wght);
+  font-variation-settings: "wght" var(--text-wght);
 }
 
 .block {
@@ -28,21 +31,17 @@
 }
 
 .secondary-text {
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), monospace;
   text-transform: uppercase;
 }
 
 .header {
   display: flex;
-  justify-content: center;
-}
-
-.header__brand {
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: var(--header-brand-padding);
+  justify-content: center;
 }
 
 .logotype {
@@ -57,11 +56,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.section-card {
-  display: flex;
-  flex-direction: column;
   gap: 52px;
   padding-block-start: clamp(98px, 100.704px - 0.188vw, 100px);
 }
@@ -69,7 +63,7 @@
 .card-title,
 .card-text {
   font-size: 18px;
-  font-variation-settings: "wght" var(--Inter-wght);
+  font-variation-settings: "wght" var(--text-wght);
 }
 
 .card-title {
@@ -125,7 +119,7 @@
   top: 25px;
   right: 25px;
   opacity: 0.5;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), monospace;
   font-size: 14px;
   text-shadow:
     1px 1px 0px var(--label-stroke-color),
@@ -195,7 +189,7 @@
 }
 
 .button__text {
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-secondary), monospace;
   font-size: 14px;
   line-height: 90%;
   mix-blend-mode: difference;
@@ -206,7 +200,6 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-block-start: 50px;
   min-block-size: 55px;
   min-inline-size: 335px;
 }
@@ -285,5 +278,11 @@
 @media (width <= 375px) {
   .button-save {
     flex-direction: column;
+    min-inline-size: 306px;
+    min-block-size: 84px;
+  }
+  .menu-dialog {
+    padding: 30px 40px;
+    min-inline-size: 341px;
   }
 }

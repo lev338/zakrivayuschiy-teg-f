@@ -25,6 +25,10 @@
   opacity: 0;
 }
 
+.like-icon {
+  width: 39px;
+}
+
 .like-icon:hover .core {
   fill: var(--animation-fill-color);
   transition-delay: 0;

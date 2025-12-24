@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --font-family-base: 'Inter-Variable', sans-serif;
-  --font-family-secondary: 'PressStart2P-Regular', monospace;
-  --Inter-wght: 400;
+  --font-family-base: 'Inter';
+  --font-family-secondary: 'PressStart2P';
+  --text-wght: 400;
   --page-bg-image:
     repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(to top, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -24,11 +24,11 @@
 }
 
 .card-title {
-  --Inter-wght: 715;
+  --text-wght: 715;
 }
 
 .card-text {
-  --Inter-wght: 410;
+  --text-wght: 410;
 }
 
 .like-icon:hover .core,
