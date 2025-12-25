@@ -13,7 +13,7 @@
   --contour-color: #000;
   --animation-fill-color: red;
   --label-stroke-color: #fff;
-  --header-brand-padding: clamp(122px, 112.77px + 2.46cqi, 130px) clamp(16px, -114.77px + 37.07cqi, 122.5px);
+  --header-brand-padding: clamp(122px, 112.77px + 2.46cqi, 130px);
   --logotype-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --button-bg-color: #fff;

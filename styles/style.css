@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: var(--header-brand-padding);
+  padding-block: var(--header-brand-padding);
   justify-content: center;
 }
 
@@ -72,6 +72,7 @@
 
 .card-text {
   line-height: 21px;
+  overflow: auto;
 }
 
 .card-image-container {
@@ -131,7 +132,15 @@
 .card-content {
   display: grid;
   gap: 25px;
-  padding: 27px 25px 25px;
+  padding: 25px;
+}
+
+.card-freetrack {
+  padding-top: 14px;
+}
+
+.card-blank-slate {
+  padding-top: 20px;
 }
 
 .card-button-container {
@@ -204,15 +213,12 @@
   min-inline-size: 335px;
 }
 
-.button-save-svg {
-  width: 21px;
-  mix-blend-mode: difference;
+.button-save-text {
+  text-transform: none;
 }
 
-.button-save-text {
-  font-size: 14px;
-  line-height: 90%;
-  text-transform: none;
+.button-save-svg {
+  width: 21px;
   mix-blend-mode: difference;
 }
 
@@ -284,5 +290,11 @@
   .menu-dialog {
     padding: 30px 40px;
     min-inline-size: 341px;
+  }
+  .card-freetrack {
+  padding: 20px 25px 25px;
+  }
+  .button-save-svg {
+    width: 28px;
   }
 }
